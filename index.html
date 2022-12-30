@@ -5,6 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>parallax</title>
+    <style>
+        body{
+            overflow-x:hidden ;
+        }
+
+        .paralax{
+            position: absolute;
+            height: 100%;
+        }
+
+        .paralax-item{
+            position:fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        .p-item1{
+            background: url("img/m_1.png") center/cover no-repeat;
+        }
+
+        .p-item3{
+            background:url("img/m_3.png") bottom/100% no-repeat ;
+            background-size: cover;
+            background-position: center;
+            z-index: 2;
+        }
+    </style>
 </head>
 <body>
     <div class="paralax">
@@ -18,6 +47,9 @@
         <div class="content-header">
             <h1>Parallax Design</h1>
             <h2>The next Level Parralax Scrolling Web Design</h2>
+        </div>
+        <div class="content">
+            <img src="img/astro.png" alt="">
         </div>
     </div>
 </body>
