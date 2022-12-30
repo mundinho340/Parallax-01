@@ -33,6 +33,36 @@
             background-position: center;
             z-index: 2;
         }
+
+        .p-item4{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 10000%;
+            height: 100%;
+            content: "";
+            background: url("img/fog_2.pmg");
+            background-size: contain;
+            background-position: center;
+            animation: marquee 20s linear infinite;
+        }
+        @keyframes marquee{
+            0%{
+                transform: translate3d(0,0,0);
+            }
+
+            100%{
+                transform: translate3d(-200vw,0,0);
+            }
+        }
+
+        .container{
+            position: relative;
+            z-index: 1;
+            max-width: 1170px;
+            margin: 0 auto;
+            margin-top: 100vh;
+        }
     </style>
 </head>
 <body>
